@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <EditText
+        android:id="@+id/id_input"
+        android:hint="ID"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/pw_input"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:inputType="text"/>
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+
+        <ImageView
+            android:background="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="12dp"/>
+
+        <Button
+            android:layout_toRightOf="@id/imageView"
+            android:id="@+id/uploadImageBtn"
+            android:text="Upload Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/name_input"
+        android:hint="Name"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/description_input"
+        android:hint="Description"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/email_input"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:inputType="textEmailAddress"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="3"/>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:text="Register"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:background="@color/twitter"
+        android:layout_weight="1"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
